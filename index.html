@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Michelle Beauty Care - Klinik Kecantikan Surabaya</title>
+
+    <!-- Favicon (Icon di Tab Browser) -->
+    <link rel="icon" type="image/png" href="assets/images/logo icon.png">
+    <link rel="shortcut icon" href="assets/images/logo icon.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container nav-flex">
+        <div class="logo">
+            <img src="assets/images/logo-michellebeauty.png" alt="Logo" class="logo-img">
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="#Booking Sekarang" class="btn-booking">Booking</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+    <div class="container hero-grid">
+        <div class="hero-content">
+            <h1>Tampil Cantik & Percaya Diri</h1>
+            <p>Perawatan wajah, tubuh, dan rambut dengan teknologi modern & tenaga profesional. Klinik kecantikan terpercaya di Surabaya sejak 2012.</p>
+            <div class="hero-buttons">
+                <a href="https://api.whatsapp.com/send/?phone=628986989754&text=Halo%2C+saya+mau+reservasi&type=phone_number&app_absent=0" class="btn-primary" target="_blank">Booking Sekarang</a>
+                <a href="#layanan" class="btn-outline">Lihat Layanan</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/hero-bg.jpg" alt="Kecantikan" >
+        </div>
+    </div>
+</section>
+
+<!-- ========== LAYANAN ========== -->
+<section id="layanan">
+    <div class="container">
+        <h2 class="section-title">Layanan Kami</h2>
+        <p class="section-sub">Rawat kecantikanmu dengan treatment terbaik dari ahlinya</p>
+        
+        <div class="services-wrapper">
+            <button class="service-arrow prev" id="prevService">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="services-slider-container">
+                <div class="services-slider" id="servicesSlider">
+                    <div class="services-track" id="servicesTrack">
+                        
+                        <!-- 1. Skin Booster -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/skin-boster.png" width="60" height="60" alt="skin boster Icon" class="service-icon">
+                            <h3>Skin Booster</h3>
+                            <p>Bioregen, Nucleofill, Profhillo, Bellavita, Collagen
+                               Stimulator, Baby Skinbooster, E & F Booster, PRP +
+                               Skinbooster</p>
+                        </div>
+                        
+                        <!-- 2. Botox Treatment -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/botox.png" width="60" height="60" alt="botox Icon" class="service-icon">
+                            <h3>Botox Treatment</h3>
+                            <p>Botox Wajah, Botox Rahang, Botox Cuping Hidung, Botox Ketiak</p>
+                        </div>
+                        
+                        <!-- 3. Peeling Treatment -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/peeling.png" width="60" height="60" alt="Peeling Icon" class="service-icon">   
+                            <h3>Peeling Treatment</h3>
+                            <p>Acne Peeling, White Peeling, Regeneration Peel, Body Peeling</p>
+                        </div>
+                        
+                        <!-- 4. Thread Lift -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/lifting.png" width="60" height="60" alt="Threadlift Icon" class="service-icon">
+                            <h3>Threadlift Treatment</h3>
+                            <p>Threadlift Hidung, Threadlift Pipi, Threadlift Doublechin</p>
+                        </div>
+                        
+                        <!-- 5. Filler Treatment -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/lips.png" width="60" height="60" alt="skin booster Icon" class="service-icon">
+                            <h3>Filler Treatment</h3>
+                            <p>Filler Wajah, Filler Bibir, Filler Bawah Mata, Filler Dagu</p>
+                        </div>
+                        
+                        <!-- 6. HIFU Treatment -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/HI-FU.png" width="60" height="60" alt="HIFU Icon" class="service-icon">   
+                            <h3>HIFU Treatment</h3>
+                            <p>Hifu Wajah, Hifu Double Chin, Hifu Lengan, Hifu Miss-VMengencangkan kulit</p>
+                        </div>
+                        
+                        <!-- 7. Dermapen Treatment -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/microdermabrasion.png" width="60" height="60" alt="Dermapen Icon" class="service-icon">
+                            <h3>Dermapen Treatment</h3>
+                            <p>Dermapen Wajah, Dermapen Mata, Dermapen Rambut</p>
+                        </div>
+                        
+                        <!-- 8. MDR Treatment -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/face.png" width="60" height="60" alt="MDR Icon" class="service-icon">
+                            <h3>MDR Treatment</h3>
+                            <p>Mengatasi Bekas Jerawat, Kerutan, & Stretch Mark</p>
+                        </div>
+                        
+                        <!-- 9. CO2 Laser -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/laser.png" width="60" height="60" alt="CO2 Laser Icon" class="service-icon">
+                            <h3>CO2 Laser</h3>
+                            <p>Black Doll Laser, Laser Flek, Rejuvenation, Tatto Removal, Cherry Lips</p>
+                        </div>
+                        
+                        <!-- 10. Injeksi Whitening -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/suntik.png" width="60" height="60" alt="Injeksi Whitening Icon" class="service-icon">
+                            <h3>Injeksi Whitening</h3>
+                            <p>Whitening I, Whitening II, Whitening III, Whitening IV, Whitening V, Whitening VI, Infus Chromosome</p>
+                        </div>
+                        
+                        <!-- 11. Injeksi Vitamin -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/vitamin.png" width="60" height="60" alt="Injeksi Vitamin Icon" class="service-icon">
+                            <h3>Injeksi Vitamin</h3>
+                            <p>Injeksi Vitamin C, Infus Immune Booster, Neurobion + Vit C</p>
+                        </div>
+                        
+                        <!-- 12. Lipolisis Treatment -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/lipolisis.png" width="60" height="60" alt="Lipolisis Icon" class="service-icon">
+                            <h3>Lipolisis Treatment</h3>
+                            <p>Untuk mengurangi lemak di area tubuh tertentu seperti dagu berlipat, selulit, atau area perut</p>
+                        </div>
+                        
+                        <!-- 13. Slim Kombinasi -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/slim-body.png" width="60" height="60" alt="Slim Kombinasi Icon" class="service-icon">
+                            <h3>Slim Kombinasi</h3>
+                            <p>Membentuk tubuh ideal</p>
+                        </div>
+                        
+                        <!-- 14. C-LSY Treatment -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/treatment.png" width="60" height="60" alt="C-LSY Icon" class="service-icon">
+                            <h3>C-LSY Treatment</h3>
+                            <p>Perawatan kontur tubuh</p>
+                        </div>
+                        
+                        <!-- 15. M-Build Treatment -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/weight-loss.png" width="60" height="60" alt="M-Build Icon" class="service-icon">
+                            <h3>M-Build Treatment</h3>
+                            <p>Membangun massa otot</p>
+                        </div>
+                        
+                        <!-- 16. IPL Treatment -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/IPL.png" width="60" height="60" alt="IPL Icon" class="service-icon">   
+                            <h3>IPL Treatment</h3>
+                            <p>IPL Wajah, IPL Leher, IPL Ketiak, IPL Lipatan, IPL Upper Lips</p>
+                        </div>
+                        
+                        <!-- 17. Hair Removal Laser -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/legs.png" width="60" height="60" alt="Hair Icon" class="service-icon">
+                            <h3>Hair Removal Laser</h3>
+                            <p>Hair Removal Kaki, Hair Removal Tangan, Hair Removal Ketiak, Hair Removal Kumis, Hair Removal Jenggot</p>
+                        </div>
+                        
+                        <!-- 18. Pico Second Laser -->
+                        <div class="service-card">
+                            <div class="service-icon img"></div>
+                            <img src="assets/icons/therapy.png" width="60" height="60" alt="Pico Second Laser Icon" class="service-icon">   
+                            <h3>Pico Second Laser</h3>
+                            <p>Black Doll Laser, Laser Flek, Rejuvenation, Tatto Removal, Cherry Lips</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <button class="service-arrow next" id="nextService">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <!-- Indikator Dot -->
+        <div class="service-dots" id="serviceDots"></div>
+    </div>
+</section>
+
+<!-- TENTANG KLINIK -->
+<section id="tentang" class="about-section">
+    <div class="container about-grid">
+        
+        <!-- KOLOM KIRI: TEKS + STATISTIK + LIST + TOMBOL -->
+        <div class="about-text">
+            <h2>Tentang Michelle Beauty Care</h2>
+            <p>Berpengalaman lebih dari 10 tahun, kami hadir untuk memberikan perawatan kecantikan terbaik dengan standar internasional.</p>
+            
+            <!-- STATISTIK -->
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Tahun Pengalaman</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10.000+</div>
+                    <div class="stat-label">Pelanggan Puas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Kepuasan Terjamin</div>
+                </div>
+            </div>
+            
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Dokter & terapis profesional</li>
+                <li><i class="fas fa-check-circle"></i> Alat berteknologi terbaru</li>
+                <li><i class="fas fa-check-circle"></i> Higienis & nyaman</li>
+                <li><i class="fas fa-check-circle"></i> Konsultasi gratis</li>
+            </ul>
+           <a href="https://api.whatsapp.com/send/?phone=628986989754&text=Halo%2C+saya+mau+reservasi&type=phone_number&app_absent=0" class="btn-primary" target="_blank">Konsultasi Sekarang</a>
+        </div>
+        
+        <!-- KOLOM KANAN: GAMBAR + DOKTER OVERLAP -->
+        <div class="about-img-wrapper">
+            <!-- GAMBAR SUASANA KLINIK -->
+            <div class="about-img">
+                <img src="assets/images/tempat-facial.jpg" alt="Suasana klinik">
+            </div>
+            <!-- LINGKARAN DOKTER (OVERLAP DI DEPAN GAMBAR) -->
+            <div class="doctor-overlap">
+                <div class="doctor-item">
+                    <div class="doctor-avatar">
+                        <img src="assets/images/dokter 1.jpg" alt="Dr. Michelle">
+                    </div>
+                    <h4>Dr. Alethia Z</h4>
+                    <p>Medical Aesthetia</p>
+                    <p>Specialist</p>
+                </div>
+                <div class="doctor-item doctor-secondary">
+                    <div class="doctor-avatar">
+                        <img src="assets/images/dokter 2.jpg" alt="Dr. Sari">
+                    </div>
+                    <h4>Dr. Gabriella S</h4>
+                    <p>Medical Aesthetia</p>
+                    <p>Specialist</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<!-- TESTIMONI -->
+<section id="testimoni">
+    <div class="container">
+        <h2 class="section-title">Apa Kata Mereka?</h2>
+        <p class="section-sub">Lebih dari 1000+ pelanggan puas dengan layanan kami</p>
+        
+        <div class="testi-grid">
+            <!-- Testimoni 1 -->
+            <div class="testi-card">
+                <div class="testi-avatar">
+                    <img src="assets/images/testi-1.jpg" alt="Yuliana">
+                </div>
+                <div class="testi-name">— Yuliana, 27 th</div>
+                <i class="fas fa-quote-left"></i>
+                <p>Saya sempat ragu mencoba botox, tapi setelah dijelaskan secara detail dan ditangani profesional, saya sangat puas dengan hasilnya. Klinik kecantikan di Surabaya yang benar-benar peduli pada pelanggan.</p>
+            </div>
+            
+            <!-- Testimoni 2 -->
+            <div class="testi-card">
+                <div class="testi-avatar">
+                    <img src="assets/images/testi-2.jpg" alt="Amira">
+                </div>
+                <div class="testi-name">— Amira, 32 th</div>
+                <i class="fas fa-quote-left"></i>
+                <p>Saya sudah rutin melakukan perawatan di Michelle Beauty Care sejak dua tahun terakhir. Kulit terasa lebih cerah dan kencang. Pelayanannya ramah dan profesional</p>
+            </div>
+            
+            <!-- Testimoni 3 -->
+            <div class="testi-card">
+                <div class="testi-avatar">
+                    <img src="assets/images/testi-3.jpg" alt="Bu Lilis">
+                </div>
+                <div class="testi-name">— Bu Lilis, 38 th</div>
+                <i class="fas fa-quote-left"></i>
+                <p>Facial di sini sangat nyaman dan hasilnya langsung terasa. Klinik kecantikan Surabaya yang sangat saya rekomendasikan!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALERI -->
+<section id="galeri" class="galeri-section">
+    <div class="container">
+        <h2 class="section-title">Galeri Kegiatan</h2>
+        <p class="section-sub">Lihat klinik dan treatment yang kami miliki</p>
+        
+        <div class="galeri-grid" id="galeriGrid">
+            <div class="galeri-item">
+                <img src="assets/images/klinik-michell.jpg" alt="Klinik">
+                <div class="galeri-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="galeri-item">
+                <img src="assets/images/tempat-facial.jpg" alt="Ruangan">
+                <div class="galeri-overlay"></i></div>
+            </div>
+            <div class="galeri-item">
+                <img src="assets/images/pico-second.png" alt="kegiatan-1">
+                <div class="galeri-overlay"></div>
+            </div>
+            <div class="galeri-item">
+                <img src="assets/images/slime-shape.png" alt="kegiatan-2">
+                <div class="galeri-overlay"></div>
+            </div>
+            <div class="galeri-item">
+                <img src="assets/images/hair-removal.png" alt="kegiatan-3">
+                <div class="galeri-overlay"></div>
+            </div>
+        </div>
+        
+        <!-- Tombol Load More -->
+        <div class="galeri-btn-container">
+            <button id="loadMoreBtn" class="btn-loadmore">Lihat Semua Galeri</button>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER & KONTAK -->
+<footer class="footer" id="kontak">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h4>Michelle Beauty Care</h4>
+            <p>Klinik kecantikan terpercaya di Surabaya sejak 2012.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Jam Operasional</h4>
+            <p>Senin - Sabtu: 09.00 - 20.00<br>Minggu & Libur: 10.00 - 17.00</p>
+        </div>
+        <div class="footer-col">
+            <h4>Kontak</h4>
+            <p>
+    📞 0898 6989 754<br>
+    ✉️ michelleskincc@gmail.com<br>
+    📍 Jl. Rungkut Madya No.125,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rungkut Kidul, Kec. Rungkut,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surabaya, Jawa Timur 60293
+</p>
+        </div>
+        <div class="footer-col social">
+            <h4>Ikuti Kami</h4>
+            <a href="https://www.instagram.com/michelleklinik/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@michellebeautycare" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.facebook.com/michellebeautycare" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com/@michellebeautycare" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+     <!-- GOOGLE MAPS -->
+        <div class="footer-map">
+            <h4>Lokasi Kami</h4>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6666666666665!2d112.777!3d-7.303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f8b8b8b8b8b%3A0x0!2zNy3CsDE4JzEwLjgiUyAxMTLCsDQ2JzM3LjIiRQ!5e0!3m2!1sid!2sid!4v1234567890"
+                width="100%" 
+                height="250" 
+                style="border:0; border-radius: 20px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p class="map-caption">📍 Jl. Rungkut Madya No.125, Rungkut Kidul, Surabaya</p>
+        </div>
+        
+    <div class="container copyright">
+        <p>&copy; 2026 Michelle Beauty Care - Redesign Tugas UTS | All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- TOMBOL FLOATING WA -->
+<a href="https://api.whatsapp.com/send/?phone=628986989754&text=Halo%2C+saya+mau+reservasi&type=phone_number&app_absent=0" class="wa-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Custom JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
